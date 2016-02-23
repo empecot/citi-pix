@@ -1,12 +1,15 @@
-
-// define function (on.submit) and define variable (input). Retrieve input value. 
-$('#submit-btn').on('submit', function(){
-	var city = ('#city-type').val();
+// define function (on.submit) and define variable (input value). Retrieve input value. 
+$('#city-name').on('submit', function(e){
+	var city = $('#city-type').val();
 	  e.preventDefault();
-
+// if input value equals the city name, change the background image to the designated img url for that city.
 if (city === "Austin"){
- $('body').css('background-image', '../images/austin.jpg');
+ src = '../images/austin.jpg'
+ $('body').css('backgroundImage','url('+src+')');
 }
+});
+
+
 
 // else if (user submits "Los Angeles" or "LA" or "LAX"){
 //  $('body').css('backgroundImage',../images/la.jpg);
@@ -24,7 +27,7 @@ if (city === "Austin"){
 //  $('body').css('backgroundImage',../images/sydney.jpg);
 // }
 
-});
+
 
 
 
