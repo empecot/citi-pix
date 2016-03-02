@@ -4,7 +4,8 @@ var cities = ["NYC", "SF", "LA", "ATX", "SYD"];
     $('#city-type').append('<option>Select a city!</option>');
 
     for (var i = 0; i <cities.length; i++) {
-   $('#city-type').append('<option val=' +cities[i]+ '>'+ cities[i] + '</option>');
+   $('#city-type').append('<option value=' +cities[i]+'>'+ cities[i] + '</option>');
+   $('#city-type').append('<option>'+cities[i]+'</option>');
 }
 
 $('#enter_city').on('change', function(e){
